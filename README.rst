@@ -31,7 +31,7 @@ By using an emulator like bochs, we can just type some words and the "machine" i
 Moreover, you can even use bochs to debug your OS, which would be mission impossible using a *real* machine.
 In most cases, a *virtual* machine is just the same as a real one, so let's use it.
 
-Why bochs? There're many emulators out there.
+There're many emulators out there, you would say, why bochs? 
 I actually have answered this question: because we can use it to debug our system.
 It has built-in debugging function and you can also use bochs with a remote gdb stub.
 I'll probably talk about this in detail later.
@@ -41,7 +41,7 @@ What else?
 
 OK, what else? Well, you might not like coding in assembly all the time. Nobody does.
 Actually we use assembly only when we don't have an option. In most times we use C programming language.
-So you need a C compiler. My choice is GCC.
+So we need a C compiler. My choice is GCC.
 Chances are you're more familiar with it than me. It's so widely used after all. So I won't take the time introducing it.
 
 Platform
@@ -49,20 +49,23 @@ Platform
 
 There's one more thing. In what OS will you develop your own OS?
 Actually you can do it in whatever OS you like.
-My choice is GNU/Linux. The most important reason is my OS, **Orange'S**, uses ELF as the default kernel bin format.
+My choice is GNU/Linux. The most important reason is my OS, **Orange'S**, uses ELF as the default kernel file format.
 GCC generates ELF binaries easily in Linux.
 
-That's it. No Windows/Linux/Mac debate here. Use whatever platform you feel good with.
+That's it. No Linux/Mac/Windows debate here. Use whatever platform you feel good with.
 The only advice is, you'd better try different platforms before you really settle down.
 Keep your mind open, and do not be too lazy to try new things.
 
-Code in this step
-'''''''''''''''''
+The code in this step
+'''''''''''''''''''''
 
-There aren't much code in this step. You will see no new stuff if you checkout the code.
-What you should keep in mind is that the compiling/building process and the configuration may be different in different platforms,
+There isn't much code in this step. You will see no new stuff if you check it out.
+But you'll find two folders in it: ``linux/`` and ``win/``.
+I hope these two folders will let you remember that something (e.g. the compiling/building process or the configuration) may be different in different platforms,
 so if the source you cloned doesn't work, fork it and hack it your way.
 GitHub makes it so easy. That's why you like GitHub, right?
+
+`‹prev`_   `next›`_
 
 .. _`Step 01`: https://github.com/yyu/osfs01
 .. _`‹prev`: https://github.com/yyu/osfs01
